@@ -1,0 +1,24 @@
+{
+  "name": "Logboard",
+  "short_name": "Logboard",
+  "description": "Longboard trick tracking, clip review and rider rankings.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F2E8D8",
+  "theme_color": "#9A5208",
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "QU4G36W3H3.com.marcosloim.logboard",
+        "paths": [
+          "/playlist/*"
+        ]
+      }
+    ]
+  }
+}

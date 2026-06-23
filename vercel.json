@@ -1,0 +1,54 @@
+{
+  "rewrites": [
+    {
+      "source": "/playlist/:slug*",
+      "destination": "/playlist/index.html"
+    },
+    {
+      "source": "/download/:path*",
+      "destination": "/download/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/apple-app-site-association",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/assetlinks.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    }
+  ]
+}
